@@ -58,12 +58,12 @@ class _HomePageState extends State<HomePage> {
     );
   }
   Widget _bulidItem(context, index, animation){
-    return ChatMessage(_chat[index],animation:animation);
+    return ChatMessage(_chat[index],"유저ID","",animation:animation);
   }
 
   void _handleSubmitted(String text) {
     Logger().d(text);
-    _textEditingController.clear();
+    _textEditingController.clear();  //지워줘야함
     _chat.insert(0, text);
     _animListKey.currentState.insertItem(0);
 

@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 
 class ChatMessage extends StatelessWidget {
   final String txt;
+  final String id;
+  final String image;
   final Animation<double> animation;
 
-  const ChatMessage(this.txt, {
+  const ChatMessage(this.txt, this.id, this.image, {
     @required this.animation, Key key, }) : super(key: key);
 
   @override
@@ -30,7 +32,8 @@ class ChatMessage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                Text("ID or Name", style: TextStyle(fontWeight: FontWeight.bold),),
+                Text(id, style: TextStyle(fontWeight: FontWeight.bold),),
+                Image.network(image),
                 Text(txt)
               ],),
             )
