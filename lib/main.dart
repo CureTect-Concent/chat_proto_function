@@ -1,8 +1,14 @@
+import 'package:chat_app/screens/entrance_page/entrance_page.dart';
+import 'package:chat_app/screens/entrance_page/local_utils/EntranceProvider.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'color_picke.dart';
-import 'home_page.dart';
+import 'screens/chatting_page/home_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -11,13 +17,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.amber,
-        visualDensity: VisualDensity.adaptivePlatformDensity
-      ),
-        //home: colorPick(),
-      home: HomePage(),
+      home: MyHomePage(),
     );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key key}) : super(key: key);
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(create: (context)=>EntranceProvier(), child: EntrancePage(),);
   }
 }

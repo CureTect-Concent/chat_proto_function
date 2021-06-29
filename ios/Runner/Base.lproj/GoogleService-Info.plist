@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>774817345838-7sb07i2j8gtgnacvf3hg7ublfq3dl4r8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.774817345838-7sb07i2j8gtgnacvf3hg7ublfq3dl4r8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5EiydeBCU4dWuhkoQ16e4kAKnES38D4E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>774817345838</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.deumian.chatApp</string>
+	<key>PROJECT_ID</key>
+	<string>chatsubsever</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chatsubsever.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:774817345838:ios:2d271c1eac294facbe4abf</string>
+</dict>
+</plist>

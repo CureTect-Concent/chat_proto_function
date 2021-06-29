@@ -24,6 +24,12 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_colorpicker: ^0.4.0
+  cloud_firestore: ^1.0.0
+  firebase_core: ^1.0.0
+  provider: ^5.0.0 #채팅앱 패턴(?)을 위해서 필요함
+  cached_network_image: ^2.3.3
+
+  uuid: ^3.0.1 #유니크 아이디 생성기
 
 
   # The following adds the Cupertino Icons font to your application.
