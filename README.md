@@ -1,3 +1,4 @@
+# 사용안함 (다트프로토타입)
 # chat_app
 
 A new Flutter application.
